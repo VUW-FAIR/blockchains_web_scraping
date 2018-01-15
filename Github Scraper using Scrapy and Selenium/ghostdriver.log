@@ -1,0 +1,19 @@
+[INFO  - 2017-11-16T21:35:12.660Z] GhostDriver - Main - running on port 63643
+[INFO  - 2017-11-16T21:35:16.087Z] Session [091e9e10-cb16-11e7-86e3-49f38b878bc3] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-11-16T21:35:16.087Z] Session [091e9e10-cb16-11e7-86e3-49f38b878bc3] - page.customHeaders:  - {}
+[INFO  - 2017-11-16T21:35:16.088Z] Session [091e9e10-cb16-11e7-86e3-49f38b878bc3] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-11-16T21:35:16.088Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 091e9e10-cb16-11e7-86e3-49f38b878bc3
+[ERROR - 2017-11-16T21:35:18.097Z] Session [091e9e10-cb16-11e7-86e3-49f38b878bc3] - page.onError - msg: ReferenceError: Can't find variable: Promise
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-16T21:35:18.097Z] Session [091e9e10-cb16-11e7-86e3-49f38b878bc3] - page.onError - stack:
+  o (https://assets-cdn.github.com/assets/frameworks-17b56c01b8d812e11d02f5833a308feac9d67aac79b64cae4189bb7cf5da4b0d.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-16T21:35:18.162Z] Session [091e9e10-cb16-11e7-86e3-49f38b878bc3] - page.onError - msg: ReferenceError: Can't find variable: Promise
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-11-16T21:35:18.162Z] Session [091e9e10-cb16-11e7-86e3-49f38b878bc3] - page.onError - stack:
+  o (https://assets-cdn.github.com/assets/frameworks-17b56c01b8d812e11d02f5833a308feac9d67aac79b64cae4189bb7cf5da4b0d.js:1)
+
+  phantomjs://platform/console++.js:263 in error
