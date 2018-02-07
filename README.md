@@ -10,7 +10,7 @@ Using this dataset, a programme of studies will be conducted to answer the broad
 (5) Classroom applications. Subparts of the dataset could eventually be used in the classroom in big data-related INFO, MIM, & MBusAn courses to demonstrate computational analysis techniques. 
 
 
-### Before you use Notes
+### Technical Guide
 
 Scrapers that scrape information regarding various blockchain technologies such as bitcoin from various websites.
 
