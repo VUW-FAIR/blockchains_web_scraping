@@ -11,6 +11,7 @@ I recommend using anaconda to set up a virtual environment, and calling the comm
 
 Please note that the minimum value that data goes to on the time series graphs (found in time series) is 1, not 0. Not sure why this is, If anyone knows feel free to message me. 
 
+Scripts are meant to be used together, e.g. the time_series_twitter graph goes over csv files of the same format of the csv files you get after running the twitterAPI scraper.
 
 
 
