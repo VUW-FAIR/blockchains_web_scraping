@@ -56,7 +56,7 @@ class bitcoin_talk_scraper(scrapy.Spider):
             if(len(next_button) >= 1):
                 print("going to next category page!")
                 url = response.urljoin(next_button[1])
-                time.sleep(10)
+                time.sleep(2)
                 yield scrapy.Request(url=url, callback=self.parse_category)
             else:
                 print("last page")
@@ -71,8 +71,6 @@ class bitcoin_talk_scraper(scrapy.Spider):
         print("in parse page")
         soup = BeautifulSoup(response.body, 'html.parser')
 
-        # title = soup.find('td', attrs={'id': 'top_subject'})
-        # title = response.selector.xpath('//td[@valign="middle"]//a/text()').extract()[0]
         title = response.selector.xpath('//*[@id="bodyarea"]/div[1]/div/b[4]/a/text()').extract()[0]
         print(title)
         user = soup.find_all('td', attrs={'class': 'poster_info'})
@@ -83,7 +81,6 @@ class bitcoin_talk_scraper(scrapy.Spider):
         #try going to next page
         try:
             next_button = response.selector.xpath('//span[@class = "prevnext"]/a/@href').extract()
-            # next_button = response.selector.xpath('//*[@id="bodyarea"]/table[1]/tbody/tr/td[1]/span[2]/a/@href').extract()
             if(len(next_button) >= 1):
                 print("going to next page")
                 # url = response.urljoin(next_button[0])
