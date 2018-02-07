@@ -30,7 +30,7 @@ def read_file_and_output_sorted(terms, filename):
         w = open('converted_' + filename, 'a', encoding='utf-8', newline="")  # a
         out = csv.writer(w)
 
-        for input in pd.read_csv(filename, chunksize=chunksize):
+        for input in pd.read_csv(filename, chunksize=chunksize,engine='python'):
 
             l = []
             for i in range(0, len(input)):
