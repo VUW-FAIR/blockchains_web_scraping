@@ -41,7 +41,7 @@ I recommend using anaconda to set up a virtual environment, and calling the comm
 To install a package using this virtual environment, search for your package on the site and run the shown command, e.g. for requests:
 https://anaconda.org/anaconda/requests
 
-run the command: <conda install -c anaconda requests> in your terminal
+run the command: <b><conda install -c anaconda requests></b> in your terminal
 
 
 
