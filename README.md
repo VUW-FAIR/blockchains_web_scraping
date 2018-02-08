@@ -35,7 +35,7 @@ You can make scrapy scrape the page/Forum you want by calling the name specified
 Note in the script we have: <b><name = "eth"></b>
 
 Make sure you move (cd) into the directory with the scrapy.cfg file, or else it won't be able to find the scrapy script.
-In Scrapy the 'name' variable holds 
+In Scrapy the 'name' variable holds what we call when running 
 
 I recommend using anaconda to set up a virtual environment, and calling the command from there (useful as provides a bash terminal for windows users as well).
 To install a package using this virtual environment, search for your package on the site and run the shown command, 
