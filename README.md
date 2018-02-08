@@ -38,10 +38,12 @@ Make sure you move (cd) into the directory with the scrapy.cfg file, or else it 
 In Scrapy the 'name' variable holds 
 
 I recommend using anaconda to set up a virtual environment, and calling the command from there (useful as provides a bash terminal for windows users as well).
-To install a package using this virtual environment, search for your package on the site and run the shown command, e.g. for requests:
+To install a package using this virtual environment, search for your package on the site and run the shown command, 
+
+e.g. for requests:
 https://anaconda.org/anaconda/requests
 
-run the command: <b><conda install -c anaconda requests></b> in your terminal
+run the command: <b><conda install -c anaconda requests></b> in your terminal to install it.
 
 
 
