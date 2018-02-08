@@ -12,12 +12,11 @@ Using this dataset, a programme of studies will be conducted to answer the broad
 
 ## Technical Guide
 
-Scrapers that scrape information regarding various blockchain technologies such as bitcoin from various websites.
-
 Note: Github Scraper using Scrapy and Selenium is depreciated, use Github_API scraper instead (in github folder). 
 
-Forum scraper for bitcointalk.org in bitcoin_talk_forum_scraper, whilst all other forum scrapers in forum_scraper.
-You can see the scripts in the spiders folder. e.g. blockchains_web_scraping/forum_scraper/forum_scraper/spiders/ for all the scripts for the different forums. 
+The forum scraper for bitcointalk.org is in bitcoin_talk_forum_scraper, whilst all other forum scrapers in forum_scraper.
+
+You can see the scripts in the <i>spiders folder</i>. e.g. blockchains_web_scraping/forum_scraper/forum_scraper/spiders/ for all the scripts for the different forums. 
 
 Please note that the minimum value that data goes to on the time series graphs (found in time series) is 1, not 0. Not sure why this is, If anyone knows feel free to message me. 
 
