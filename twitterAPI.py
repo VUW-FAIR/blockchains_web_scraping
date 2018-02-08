@@ -71,6 +71,8 @@ def main():
     if not os.path.exists(folder_name):
         os.makedirs(folder_name)
 
+        
+    #EITHER supply the twitter usernames in a list, or read from a file and add to that list 'twitter_usernames'
     with open('cb.csv', encoding="utf8") as f:
         reader = csv.reader(x.replace('\0', '') for x in f)
         csv_list = list(reader)
