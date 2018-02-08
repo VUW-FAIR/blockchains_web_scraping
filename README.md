@@ -45,5 +45,7 @@ https://anaconda.org/anaconda/requests
 
 run the command: <b><conda install -c anaconda requests></b> in your terminal to install it.
 
+Use <i>GitHub_API_Scraper_Original.py</i> if you want to scrape information regarding one repo (and it's forks).
+<i>GitHub_API_Scraper_Build 1.1.py</i> is an extention upon the original with added methods that either scrape every repo from a user, or ever repo from a specific topic. Read comments in files on how to edit. 
 
 
