@@ -25,9 +25,14 @@ Scripts are meant to be used together, e.g. the time_series_twitter graph goes o
 
 ### HOW TO RUN
 
-You can make scrapy scrape the page/Forum you want by calling the name specified in the script. e.g. run the command (without angle brackets): <scrapy crawl "eth"> to crawl https://forum.ethereum.org/. This is because the name variable in the file is set to "eth".
+To run a python script type <b><python nameofscript.py></b>
+If you want a process to run in linux in the background without the terminal left open, use nohup.
+e.g. nohup python nameofscript.py & disown
+https://unix.stackexchange.com/questions/3886/difference-between-nohup-disown-and
 
-Note in the script we have: <name = "eth">
+You can make scrapy scrape the page/Forum you want by calling the name specified in the script. e.g. run the command (without angle brackets): <b><scrapy crawl "eth"></b> to crawl https://forum.ethereum.org/. This is because the name variable in the file is set to "eth".
+
+Note in the script we have: <b><name = "eth"></b>
 
 Make sure you move (cd) into the directory with the scrapy.cfg file, or else it won't be able to find the scrapy script.
 In Scrapy the 'name' variable holds 
