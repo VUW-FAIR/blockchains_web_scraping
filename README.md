@@ -12,7 +12,9 @@ Using this dataset, a programme of studies will be conducted to answer the broad
 
 ## Technical Guide
 
-Note: Github Scraper using Scrapy and Selenium is depreciated, use Github_API scraper instead (in github folder). 
+Note: 
+Github Scraper using Scrapy and Selenium is depreciated, use Github_API scraper instead (in github folder). 
+The Factivia Scraper doesn't really work fully. "fact2" is the name of the main script.
 
 The forum scraper for bitcointalk.org is in bitcoin_talk_forum_scraper, whilst all other forum scrapers in forum_scraper.
 
