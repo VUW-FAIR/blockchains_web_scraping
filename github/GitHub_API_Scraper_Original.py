@@ -4,13 +4,21 @@ from requests.auth import HTTPBasicAuth
 import json
 import time
 
+
+'''
+Please provide github username and password for higher rate requests
+'''
 username = 'username'
 password = 'password'
 forks_list = []
 
+'''
+This script utilizes the github API to scrape information into json files.
+'''
 def main():
     print("main function")
     make_dir("GitHubScraping", "Bitcoin")
+    #pass in name of repository here for first param (aka, user then repo so in bitcoins case it's bitcoin/bitcoin)
     parse_all_info("bitcoin/bitcoin", "GitHubScraping/Bitcoin")
 
 
