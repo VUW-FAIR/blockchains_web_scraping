@@ -24,7 +24,7 @@ Please note that the minimum value that data goes to on the time series graphs (
 Scripts are meant to be used together, e.g. the time_series_twitter graph goes over csv files of the same format of the csv files you get after running the twitterAPI scraper.
 
 
-###HOW TO RUN
+### HOW TO RUN
 
 You can make scrapy scrape the page/Forum you want by calling the name specified in the script. e.g. run the command (without angle brackets): <scrapy crawl "eth"> to crawl https://forum.ethereum.org/. This is because the name variable in the file is set to "eth".
 
