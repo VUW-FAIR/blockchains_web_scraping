@@ -57,7 +57,10 @@ for i in range(0, len(names)):
     for r in repos[i]:
         B.add_edge(names[i], r, line=0.1)
 
-nx.draw(B, with_labels=True,  node_color = color_map, font_size = 7, node_size = 1000)
+#change scale and k to make nodes further/closer apart
+pos = nx.spring_layout(B,scale=10, k = 10)
+
+nx.draw(B, pos, with_labels=True, node_color = color_map, font_size = 7, node_size = 1000)
 plt.show()
 
 
