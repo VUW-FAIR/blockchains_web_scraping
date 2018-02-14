@@ -42,6 +42,6 @@ plt.xlabel('Time')
 plt.ylabel('Number of reddit posts/comments/replies etc')
 plt.title('Reddit posts time series for cryptocurrency subreddits, e.g. bitcoin\n')
 plt.legend("Number")
-plt.xticks(rotation=30)
+plt.xticks(rotation=90)
 plt.show()
 

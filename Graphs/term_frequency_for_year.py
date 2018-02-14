@@ -6,11 +6,14 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import sys
 from dateutil.parser import parse
+import nltk
+from nltk.corpus import stopwords
 
+nltk.download('stopwords')
 unwanted_chars = ".,-_\n"
-
+stopWords = set(stopwords.words('english'))
 ## SET YOU YEAR HERE:
-year = 2018
+year = 2012
 
 def main():
 
@@ -18,7 +21,7 @@ def main():
     dates = []
     csv_text = ""
 
-    for file in glob.glob("forumbitcoincom/*.csv"):
+    for file in glob.glob("reddit/*.csv"):
         print(file)
         with open(file, encoding="utf8") as f:
             reader = csv.reader(x.replace('\0', '') for x in f)
@@ -34,7 +37,7 @@ def main():
 
                     if(b.date().year == year):
                         if (len(row) > 0):
-                            #print(row[3])
+                            print(row[3])
                             csv_text += " " + row[3]
 
                 except:
@@ -78,11 +81,12 @@ def countOccurrences(text):
     count = 0
     for word in words:
         word = word.strip(unwanted_chars)
-        #print(word)
-        if word not in freq:
-            freq[word] = 0
-        freq[word] += 1
-        count = count + 1
+        if word.lower() not in stopWords:
+            #print(word)
+            if word not in freq:
+                freq[word] = 0
+            freq[word] += 1
+            count = count + 1
     #print(freq)
 
     return [freq, count]
@@ -94,7 +98,7 @@ def plotGraph(dict):
 
     plt.xlabel('word')
     plt.ylabel('number of occurrences')
-    plt.title('Occurrences for words on forumbitcoincom: \n' + str(year))
+    plt.title('Occurrences for words on reddit: \n' + str(year))
     #plt.savefig( str(year) + ".png")
     plt.show()
 
